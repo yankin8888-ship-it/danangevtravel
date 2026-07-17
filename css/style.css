@@ -934,17 +934,32 @@ button:hover{
     }
 
     .fleet-container{
-        grid-template-columns:1fr;
-    }
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
 
-    .car-card{
-        width:100%;
-        max-width:330px;
-    }
+.car-card{
+    width:100%;
+    max-width:none;
+}
 
-    .car-card img{
-        height:150px;
-    }
+.car-card img{
+    height:110px;
+}
+
+.car-card h3{
+    font-size:15px;
+}
+
+.car-card p{
+    font-size:14px;
+}
+
+.car-card button,
+.btn-primary{
+    font-size:13px;
+    padding:10px 12px;
+}
 
     /* Why */
 
@@ -975,11 +990,28 @@ button:hover{
     .contact-grid{
     grid-template-columns:repeat(2,1fr);
     gap:15px;
-    }
+}
 
-    .contact-card img{
-        width:140px;
-        height:140px;
+.contact-card{
+    padding:15px;
+}
+
+.contact-card img{
+    width:90px;
+    height:90px;
+}
+
+.contact-card h3{
+    font-size:18px;
+}
+
+.contact-card p{
+    font-size:13px;
+}
+
+.contact-card a{
+    padding:10px 12px;
+    font-size:12px;
     }
 
     /* Footer */
@@ -1021,4 +1053,17 @@ button:hover{
 
 .top-btn i{
     font-size:22px;
+}
+.price-table{
+    overflow-x:auto;
+}
+
+.price-table table{
+    min-width:100%;
+}
+
+.price-table th,
+.price-table td{
+    padding:8px;
+    font-size:12px;
 }
