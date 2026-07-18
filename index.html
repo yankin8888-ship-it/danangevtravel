@@ -35,17 +35,17 @@
         </a>
 
         <nav>
-            <a href="#home">Home</a>
-            <a href="#fleet">Cars</a>
-            <a href="#pricing">Price</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" id="nav-home">Home</a>
+            <a href="#fleet" id="nav-cars">Cars</a>
+            <a href="#pricing" id="nav-price">Price</a>
+            <a href="#contact" id="nav-contact">Contact</a>
         </nav>
 
         <div class="language-dropdown">
 
             <button class="language-btn" onclick="toggleLanguage()">
     <i class="fa-solid fa-globe"></i>
-    <span>Language</span>
+    <span id="language-text">Language</span>
 </button>
 
             <div class="language-menu" id="languageMenu">
@@ -386,11 +386,9 @@
         </section>
         <section id="pricing" class="pricing">
 
-            <h2>PRICE LIST</h2>
+    <h2 id="price-title">PRICE LIST</h2>
 
-            <p>Airport Transfer & Private Tour</p>
-
-            <div class="price-table">
+    <p id="price-subtitle">Airport Transfer & Private Tour</p>
 
                 <table>
 
@@ -619,7 +617,8 @@
 
         </div>
 
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/translations.js"></script>
 
 </body>
 

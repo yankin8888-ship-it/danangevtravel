@@ -80,3 +80,40 @@ document.addEventListener("click", function(e){
     }
 
 });
+
+function changeLanguage(lang){
+
+    document.getElementById("hero-title").innerHTML =
+        translations[lang].heroTitle;
+
+    document.getElementById("hero-subtitle").innerHTML =
+        translations[lang].heroSubtitle;
+
+    document.getElementById("hero-description").innerHTML =
+        translations[lang].heroDescription;
+
+    document.getElementById("book-btn").innerHTML =
+        translations[lang].book;
+
+    document.getElementById("nav-home").innerHTML =
+        translations[lang].navHome;
+
+    document.getElementById("nav-cars").innerHTML =
+        translations[lang].navCars;
+
+    document.getElementById("nav-price").innerHTML =
+        translations[lang].navPrice;
+
+    document.getElementById("nav-contact").innerHTML =
+        translations[lang].navContact;
+
+    document.getElementById("language-text").innerHTML =
+        translations[lang].language;
+
+    document.getElementById("languageMenu").style.display = "none";
+    document.getElementById("fleet-title").innerHTML =
+    translations[lang].fleetTitle;
+
+document.getElementById("fleet-subtitle").innerHTML =
+    translations[lang].fleetSubtitle;
+}
