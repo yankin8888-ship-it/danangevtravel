@@ -116,4 +116,76 @@ function changeLanguage(lang){
 
 document.getElementById("fleet-subtitle").innerHTML =
     translations[lang].fleetSubtitle;
+    document.getElementById("price-title").innerHTML =
+    translations[lang].priceTitle;
+
+document.getElementById("price-subtitle").innerHTML =
+    translations[lang].priceSubtitle;
+    document.getElementById("limo-seats").innerHTML = "👥 " + translations[lang].limoSeats;
+document.getElementById("limo-1").innerHTML = translations[lang].limo1;
+document.getElementById("limo-2").innerHTML = translations[lang].limo2;
+document.getElementById("limo-3").innerHTML = translations[lang].limo3;
+
+document.getElementById("vf6-seats").innerHTML = "👥 " + translations[lang].vf6Seats;
+document.getElementById("vf6-1").innerHTML = translations[lang].vf61;
+document.getElementById("vf6-2").innerHTML = translations[lang].vf62;
+document.getElementById("vf6-3").innerHTML = translations[lang].vf63;
+
+document.getElementById("vf5-seats").innerHTML = "👥 " + translations[lang].vf5Seats;
+document.getElementById("vf5-1").innerHTML = translations[lang].vf51;
+document.getElementById("vf5-2").innerHTML = translations[lang].vf52;
+document.getElementById("vf5-3").innerHTML = translations[lang].vf53;
+
+document.getElementById("vf34-seats").innerHTML = "👥 " + translations[lang].vf34Seats;
+document.getElementById("vf34-1").innerHTML = translations[lang].vf341;
+document.getElementById("vf34-2").innerHTML = translations[lang].vf342;
+document.getElementById("vf34-3").innerHTML = translations[lang].vf343;
+
+// Đổi text 4 nút BOOK NOW
+document.querySelectorAll(".fleet-book").forEach(btn => {
+    btn.innerHTML = translations[lang].bookFleet;
+});
+
+// WHY CHOOSE US
+document.getElementById("why-title").innerHTML = translations[lang].whyTitle;
+
+document.getElementById("feature1-title").innerHTML = translations[lang].feature1Title;
+document.getElementById("feature1-text").innerHTML = translations[lang].feature1Text;
+
+document.getElementById("feature2-title").innerHTML = translations[lang].feature2Title;
+document.getElementById("feature2-text").innerHTML = translations[lang].feature2Text;
+
+document.getElementById("feature3-title").innerHTML = translations[lang].feature3Title;
+document.getElementById("feature3-text").innerHTML = translations[lang].feature3Text;
+
+document.getElementById("feature4-title").innerHTML = translations[lang].feature4Title;
+document.getElementById("feature4-text").innerHTML = translations[lang].feature4Text;
+
+document.getElementById("feature5-title").innerHTML = translations[lang].feature5Title;
+document.getElementById("feature5-text").innerHTML = translations[lang].feature5Text;
+
+document.getElementById("feature6-title").innerHTML = translations[lang].feature6Title;
+document.getElementById("feature6-text").innerHTML = translations[lang].feature6Text;
+
+// REVIEW
+document.getElementById("review-title").innerHTML = translations[lang].reviewTitle;
+document.getElementById("review1").innerHTML = translations[lang].review1;
+document.getElementById("review2").innerHTML = translations[lang].review2;
+document.getElementById("review3").innerHTML = translations[lang].review3;
+document.getElementById("review4").innerHTML = translations[lang].review4;
+document.getElementById("review5").innerHTML = translations[lang].review5;
+document.getElementById("review6").innerHTML = translations[lang].review6;
+// CONTACT
+document.getElementById("contact-title").innerHTML =
+    translations[lang].contactTitle;
+
+document.getElementById("contact-subtitle").innerHTML =
+    translations[lang].contactSubtitle;
+
+document.getElementById("contact-line-id").innerHTML =
+    translations[lang].contactLineId;
+
+document.querySelectorAll(".contact-btn").forEach(btn => {
+    btn.innerHTML = translations[lang].scanQR;
+    });
 }
