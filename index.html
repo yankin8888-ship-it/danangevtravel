@@ -23,43 +23,78 @@
 <header>
 
     <a href="#home" class="logo">
-    <img src="images/logo.png" alt="HOÀNG ANH EV TRAVEL">
-</a>
+        <img src="images/logo.png" alt="HOÀNG ANH EV TRAVEL">
+    </a>
 
     <nav>
-        <a href="#home">Home</a>
-        <a href="#fleet">Cars</a>
-        <a href="#pricing">Price</a>
-        <a href="#contact">Contact</a>
+
+        <a href="#home" id="nav-home">Home</a>
+        <a href="#fleet" id="nav-cars">Cars</a>
+        <a href="#pricing" id="nav-price">Price</a>
+        <a href="#contact" id="nav-contact">Contact</a>
+
     </nav>
+
+    <div class="language-dropdown">
+
+        <button class="language-btn" onclick="toggleLanguage()">
+            🌐 Language ▼
+        </button>
+
+        <div class="language-menu" id="languageMenu">
+
+            <div onclick="changeLanguage('en')">
+                🇬🇧 English
+            </div>
+
+            <div onclick="changeLanguage('vi')">
+                🇻🇳 Tiếng Việt
+            </div>
+
+            <div onclick="changeLanguage('ko')">
+                🇰🇷 한국어
+            </div>
+
+        </div>
+
+    </div>
+
 
 </header>
 <section id="home" class="hero">
 
     <div class="hero-content">
 
-        <h1>Premium Car Rental<br>in Da Nang</h1>
+    <h1 id="hero-title">
+    Premium Car Rental<br>
+    in Da Nang
+</h1>
 
-        <p>
-            Airport Transfer • Private Tour • Korean Support
-        </p>
+<p id="hero-subtitle" class="hero-subtitle">
+    Airport Transfers • Private Tours • Professional Drivers
+</p>
 
-        <div class="buttons">
+<p id="hero-description" class="hero-description">
+    Premium VinFast electric vehicles with reliable airport transfers,
+    private tours, and professional drivers.<br>
+    Travel comfortably across Da Nang, Hoi An and Central Vietnam.
+</p>
 
-    <a href="#contact" class="btn-primary">
-        BOOK NOW
-    </a>
-
-    
+<a href="#contact" class="btn-primary" id="book-btn">
+    BOOK NOW
+</a>
 
     </div>
+
 
 </section>
 <section id="fleet" class="fleet">
 
-    <h2>OUR ELECTRIC FLEET</h2>
+    <h2 id="fleet-title">
+    OUR ELECTRIC FLEET
+</h2>
 
-    <p class="fleet-subtitle">
+    <p class="fleet-subtitle" id="fleet-subtitle">
         Premium Electric Vehicles for Every Journey
     </p>
 
@@ -81,8 +116,9 @@
 
             <p>👨‍👩‍👧‍👦 Family & Group Travel</p>
 
-            <button class="btn-primary">
+            <a href="#contact" class="btn-primary">
                 Book Now
+                </a>
             </button>
 
         </div>
@@ -103,8 +139,9 @@
 
             <p>💼 Business Travel</p>
 
-            <button class="btn-primary">
+            <a href="#contact" class="btn-primary">
                 Book Now
+                </a>
             </button>
 
         </div>
@@ -125,8 +162,9 @@
 
             <p>✈ Airport Transfer</p>
 
-            <button class="btn-primary">
+            <a href="#contact" class="btn-primary">
                 Book Now
+                </a>
             </button>
 
         </div>
@@ -146,8 +184,9 @@
 
             <p>📸 Sightseeing Trips</p>
 
-            <button class="btn-primary">
+            <a href="#contact" class="btn-primary">
               Book Now
+              </a>
             </button>
 
     </div>
@@ -165,33 +204,33 @@
     </div>
 
     <div class="why-box">
-        <div class="why-icon">🛬</div>
-        <h3>Airport Pickup</h3>
-        <p>Always on time for every flight.</p>
+    <span>✈️</span>
+    <h3>Airport Transfers</h3>
+    <p>Always on time for every flight.</p>
     </div>
 
     <div class="why-box">
-        <div class="why-icon">🇰🇷</div>
-        <h3>Korean Support</h3>
-        <p>Fluent Korean communication.</p>
+    <span>🌐</span>
+    <h3>Multilingual Support</h3>
+    <p>English • Korean • Vietnamese</p>
     </div>
 
     <div class="why-box">
-        <div class="why-icon">👨‍✈️</div>
-        <h3>Professional Drivers</h3>
-        <p>Experienced and friendly.</p>
+    <span>👨‍✈️</span>
+    <h3>Professional Drivers</h3>
+    <p>Experienced, licensed and friendly.</p>
     </div>
 
     <div class="why-box">
-        <div class="why-icon">🛡</div>
-        <h3>Safe & Reliable</h3>
-        <p>Clean, insured and maintained.</p>
+    <span>🛡️</span>
+    <h3>Safe & Reliable</h3>
+    <p>Clean, insured and well maintained.</p>
     </div>
 
     <div class="why-box">
-        <div class="why-icon">⚡</div>
-        <h3>Fast Response</h3>
-        <p>Reply within minutes.</p>
+    <span>⚡</span>
+    <h3>Fast Response</h3>
+    <p>Quick replies via WhatsApp & KakaoTalk.</p>
     </div>
 
 </div>
@@ -272,55 +311,67 @@
 
     <div class="contact-grid">
 
-        <div class="contact-card">
+    <div class="contact-card">
 
-            <img src="images/kakao-qr.png" alt="Kakao">
+        <img src="images/kakao-qr.png" alt="Kakao">
 
-            <h3>KakaoTalk</h3>
+        <h3>KakaoTalk</h3>
 
-            <p>Hoanganhtravel</p>
+        <p>Hoanganhtravel</p>
 
-            <a href="#">SCAN QR</a>
-
-        </div>
-
-        <div class="contact-card">
-
-            <img src="images/zalo-qr.png" alt="Zalo">
-
-            <h3>Zalo</h3>
-
-            <p>0789 003 699</p>
-
-            <a href="#">SCAN QR</a>
-
-        </div>
-
-        <div class="contact-card">
-
-            <img src="images/line-qr.png" alt="LINE">
-
-            <h3>LINE</h3>
-
-            <p>ID: Hoanganhtravel</p>
-
-            <a href="#">SCAN QR</a>
-
-        </div>
-
-        <div class="contact-card">
-
-            <img src="images/whatsapp-qr.png" alt="WhatsApp">
-
-            <h3>WhatsApp</h3>
-
-            <p>+84 789 003 699</p>
-
-            <a href="#">SCAN QR</a>
-
-        </div>
+        <a href="javascript:void(0)"
+           onclick="openQR('images/kakao-qr.png','KakaoTalk')">
+           SCAN QR
+        </a>
 
     </div>
+
+    <div class="contact-card">
+
+        <img src="images/zalo-qr.png" alt="Zalo">
+
+        <h3>Zalo</h3>
+
+        <p>0789 003 699</p>
+
+        <a href="javascript:void(0)"
+           onclick="openQR('images/zalo-qr.png','Zalo')">
+           SCAN QR
+        </a>
+
+    </div>
+
+    <div class="contact-card">
+
+        <img src="images/line-qr.png" alt="LINE">
+
+        <h3>LINE</h3>
+
+        <p>ID: Hoanganhtravel</p>
+
+        <a href="javascript:void(0)"
+           onclick="openQR('images/line-qr.png','LINE')">
+           SCAN QR
+        </a>
+
+    </div>
+
+    <div class="contact-card">
+
+        <img src="images/whatsapp-qr.png" alt="WhatsApp">
+
+        <h3>WhatsApp</h3>
+
+        <p>+84 789 003 699</p>
+
+        <a href="javascript:void(0)"
+           onclick="openQR('images/whatsapp-qr.png','WhatsApp')">
+           SCAN QR
+        </a>
+
+    </div>
+
+</div>
 
 </section>
 <section id="pricing" class="pricing">
@@ -538,13 +589,27 @@
 
 <div class="floating-menu">
 
-<a href="#home" class="top-btn">
-    <i class="fa-solid fa-arrow-up"></i>
-</a>
-
+    <a href="#home" class="top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
 </div>
 
+<div id="qrModal" class="qr-modal">
+
+    <div class="qr-content">
+
+        <span class="close-btn" onclick="closeQR()">&times;</span>
+
+        <h2 id="qrTitle"></h2>
+
+        <img id="qrImage" src="" alt="QR Code">
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -14,3 +14,48 @@ window.addEventListener("scroll", function(){
     }
 
 });
+function openQR(image, title){
+
+    document.getElementById("qrImage").src = image;
+    document.getElementById("qrTitle").innerText = title;
+
+    document.getElementById("qrModal").style.display = "flex";
+
+}
+
+function closeQR(){
+
+    document.getElementById("qrModal").style.display = "none";
+
+}
+
+document.getElementById("qrModal").addEventListener("click", function(e){
+
+    if(e.target === this){
+
+        closeQR();
+
+    }
+});
+
+function toggleLanguage() {
+
+    const menu = document.getElementById("languageMenu");
+
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+
+}
+
+window.addEventListener("click", function (e) {
+
+    if (!e.target.closest(".language-dropdown")) {
+
+        document.getElementById("languageMenu").style.display = "none";
+
+    }
+
+});
