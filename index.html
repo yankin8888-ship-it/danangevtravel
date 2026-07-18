@@ -4,612 +4,623 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>HOÀNG ANH EV TRAVEL</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css?v=6">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header>
+    <header>
 
-    <a href="#home" class="logo">
-        <img src="images/logo.png" alt="HOÀNG ANH EV TRAVEL">
-    </a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
-    <nav>
+        <a href="#home" class="logo">
+            <img src="images/logo.png" alt="HOÀNG ANH EV TRAVEL">
+        </a>
 
-        <a href="#home" id="nav-home">Home</a>
-        <a href="#fleet" id="nav-cars">Cars</a>
-        <a href="#pricing" id="nav-price">Price</a>
-        <a href="#contact" id="nav-contact">Contact</a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#fleet">Cars</a>
+            <a href="#pricing">Price</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    </nav>
+        <div class="language-dropdown">
 
-    <div class="language-dropdown">
+            <button class="language-btn" onclick="toggleLanguage()">
+    <i class="fa-solid fa-globe"></i>
+    <span>Language</span>
+</button>
 
-        <button class="language-btn" onclick="toggleLanguage()">
-            🌐 Language ▼
-        </button>
+            <div class="language-menu" id="languageMenu">
 
-        <div class="language-menu" id="languageMenu">
+                <div onclick="changeLanguage('en')">🇬🇧 English</div>
+                <div onclick="changeLanguage('vi')">🇻🇳 Tiếng Việt</div>
+                <div onclick="changeLanguage('ko')">🇰🇷 한국어</div>
 
-            <div onclick="changeLanguage('en')">
-                🇬🇧 English
-            </div>
-
-            <div onclick="changeLanguage('vi')">
-                🇻🇳 Tiếng Việt
-            </div>
-
-            <div onclick="changeLanguage('ko')">
-                🇰🇷 한국어
             </div>
 
         </div>
 
-    </div>
+    </header>
 
+    <div class="mobile-menu" id="mobileMenu">
 
-</header>
-<section id="home" class="hero">
+        <a href="#home" onclick="toggleMenu()"><i class="fa-solid fa-house"></i> Home</a>
 
-    <div class="hero-content">
+        <a href="#fleet" onclick="toggleMenu()"><i class="fa-solid fa-car-side"></i> Cars</a>
 
-    <h1 id="hero-title">
-    Premium Car Rental<br>
-    in Da Nang
-</h1>
+        <a href="#pricing" onclick="toggleMenu()"><i class="fa-solid fa-wallet"></i> Price</a>
 
-<p id="hero-subtitle" class="hero-subtitle">
-    Airport Transfers • Private Tours • Professional Drivers
-</p>
+        <a href="#reviews" onclick="toggleMenu()"><i class="fa-solid fa-star"></i> Reviews</a>
 
-<p id="hero-description" class="hero-description">
-    Premium VinFast electric vehicles with reliable airport transfers,
-    private tours, and professional drivers.<br>
-    Travel comfortably across Da Nang, Hoi An and Central Vietnam.
-</p>
-
-<a href="#contact" class="btn-primary" id="book-btn">
-    BOOK NOW
-</a>
+        <a href="#contact" onclick="toggleMenu()"><i class="fa-solid fa-headset"></i> Contact</a>
 
     </div>
 
+    
+        <section id="home" class="hero">
 
-</section>
-<section id="fleet" class="fleet">
+            <div class="hero-content">
 
-    <h2 id="fleet-title">
-    OUR ELECTRIC FLEET
-</h2>
+                <h1 id="hero-title">
+                    Premium Car Rental<br>
+                    in Da Nang
+                </h1>
 
-    <p class="fleet-subtitle" id="fleet-subtitle">
-        Premium Electric Vehicles for Every Journey
-    </p>
+                <p id="hero-subtitle" class="hero-subtitle">
+                    Airport Transfers • Private Tours • Professional Drivers
+                </p>
 
-    <div class="fleet-container">
+                <p id="hero-description" class="hero-description">
+                    Premium VinFast electric vehicles with reliable airport transfers,
+                    private tours, and professional drivers.<br>
+                    Travel comfortably across Da Nang, Hoi An and Central Vietnam.
+                </p>
 
-        <!-- Limo Green -->
-
-        <div class="car-card">
-
-            <img src="images/limo.jpg" alt="VinFast Limo Green">
-
-            <h3>VinFast Limo Green</h3>
-
-            <p>👥 7 Seats</p>
-
-            <p>✈ Airport Transfer</p>
-
-            <p>🏖 Da Nang & Hoi An Tours</p>
-
-            <p>👨‍👩‍👧‍👦 Family & Group Travel</p>
-
-            <a href="#contact" class="btn-primary">
-                Book Now
+                <a href="#contact" class="btn-primary" id="book-btn">
+                    BOOK NOW
                 </a>
-            </button>
 
-        </div>
+            </div>
 
-        <!-- VF6 -->
 
-        <div class="car-card">
+        </section>
+        <section id="fleet" class="fleet">
 
-            <img src="images/vf6.jpg" alt="VinFast VF6">
+            <h2 id="fleet-title">
+                OUR ELECTRIC FLEET
+            </h2>
 
-            <h3>VinFast VF6</h3>
-
-            <p>👥 5 Seats</p>
-
-            <p>✈ Airport Pickup</p>
-
-            <p>🏙 City Tour</p>
-
-            <p>💼 Business Travel</p>
-
-            <a href="#contact" class="btn-primary">
-                Book Now
-                </a>
-            </button>
-
-        </div>
-
-        <!-- VF5 -->
-
-        <div class="car-card">
-
-            <img src="images/VF5.jpg" alt="VinFast VF5">
-
-            <h3>VinFast VF5</h3>
-
-            <p>👥 4 Seats</p>
-
-            <p>💰 Best Value</p>
-
-            <p>🏙 City Tour</p>
-
-            <p>✈ Airport Transfer</p>
-
-            <a href="#contact" class="btn-primary">
-                Book Now
-                </a>
-            </button>
-
-        </div>
-        <!-- VF34 -->
-
-        <div class="car-card">
-
-            <img src="images/vf34.jpg" alt="VinFast VF34">
-
-            <h3>VinFast VF34</h3>
-
-            <p>👥 5 Seats</p>
-
-            <p>✈ Airport Transfer</p>
-
-            <p>🏝 Private Tour</p>
-
-            <p>📸 Sightseeing Trips</p>
-
-            <a href="#contact" class="btn-primary">
-              Book Now
-              </a>
-            </button>
-
-    </div>
-    </section>
-<section class="why">
-
-    <h2>WHY CHOOSE US</h2>
-
-    <div class="why-grid">
-
-    <div class="why-box">
-        <div class="why-icon">🚘</div>
-        <h3>New EV Vehicles</h3>
-        <p>Latest VinFast electric vehicles.</p>
-    </div>
-
-    <div class="why-box">
-    <span>✈️</span>
-    <h3>Airport Transfers</h3>
-    <p>Always on time for every flight.</p>
-    </div>
-
-    <div class="why-box">
-    <span>🌐</span>
-    <h3>Multilingual Support</h3>
-    <p>English • Korean • Vietnamese</p>
-    </div>
-
-    <div class="why-box">
-    <span>👨‍✈️</span>
-    <h3>Professional Drivers</h3>
-    <p>Experienced, licensed and friendly.</p>
-    </div>
-
-    <div class="why-box">
-    <span>🛡️</span>
-    <h3>Safe & Reliable</h3>
-    <p>Clean, insured and well maintained.</p>
-    </div>
-
-    <div class="why-box">
-    <span>⚡</span>
-    <h3>Fast Response</h3>
-    <p>Quick replies via WhatsApp & KakaoTalk.</p>
-    </div>
-
-</div>
-
-</section>
-<section class="reviews">
-
-    <h2>OUR CUSTOMER REVIEWS</h2>
-
-    <div class="review-grid">
-
-        <div class="review-card">
-
-            <div class="stars">★★★★★</div>
-
-            <h3>Kim Min Soo 🇰🇷</h3>
-
-            <p>
-                Excellent service. Very clean vehicle and
-                fluent Korean communication.
+            <p class="fleet-subtitle" id="fleet-subtitle">
+                Premium Electric Vehicles for Every Journey
             </p>
 
-        </div>
+            <div class="fleet-container">
 
-        <div class="review-card">
+                <!-- Limo Green -->
 
-            <div class="stars">★★★★★</div>
+                <div class="car-card">
 
-            <h3>Lee Ji Eun 🇰🇷</h3>
+                    <img src="images/limo.jpg" alt="VinFast Limo Green">
 
-            <p>
-                Driver arrived early.
-                Airport pickup was perfect.
-                Highly recommended.
+                    <h3>VinFast Limo Green</h3>
+
+                    <p>👥 7 Seats</p>
+
+                    <p>✈ Airport Transfer</p>
+
+                    <p>🏖 Da Nang & Hoi An Tours</p>
+
+                    <p>👨‍👩‍👧‍👦 Family & Group Travel</p>
+
+                    <a href="#contact" class="btn-primary">
+                        Book Now
+                    </a>
+                   
+
+                </div>
+
+                <!-- VF6 -->
+
+                <div class="car-card">
+
+                    <img src="images/vf6.jpg" alt="VinFast VF6">
+
+                    <h3>VinFast VF6</h3>
+
+                    <p>👥 5 Seats</p>
+
+                    <p>✈ Airport Pickup</p>
+
+                    <p>🏙 City Tour</p>
+
+                    <p>💼 Business Travel</p>
+
+                    <a href="#contact" class="btn-primary">
+                        Book Now
+                    </a>
+                    
+
+                </div>
+
+                <!-- VF5 -->
+
+                <div class="car-card">
+
+                    <img src="images/VF5.jpg" alt="VinFast VF5">
+
+                    <h3>VinFast VF5</h3>
+
+                    <p>👥 4 Seats</p>
+
+                    <p>💰 Best Value</p>
+
+                    <p>🏙 City Tour</p>
+
+                    <p>✈ Airport Transfer</p>
+
+                    <a href="#contact" class="btn-primary">
+                        Book Now
+                    </a>
+                    
+
+                </div>
+                <!-- VF34 -->
+
+                <div class="car-card">
+
+                    <img src="images/vf34.jpg" alt="VinFast VF34">
+
+                    <h3>VinFast VF34</h3>
+
+                    <p>👥 5 Seats</p>
+
+                    <p>✈ Airport Transfer</p>
+
+                    <p>🏝 Private Tour</p>
+
+                    <p>📸 Sightseeing Trips</p>
+
+                    <a href="#contact" class="btn-primary">
+                        Book Now
+                    </a>
+                   
+
+                </div>
+        </section>
+        <section class="why">
+
+            <h2>WHY CHOOSE US</h2>
+
+            <div class="why-grid">
+
+                <div class="why-box">
+                    <div class="why-icon">🚘</div>
+                    <h3>New EV Vehicles</h3>
+                    <p>Latest VinFast electric vehicles.</p>
+                </div>
+
+                <div class="why-box">
+                    <span>✈️</span>
+                    <h3>Airport Transfers</h3>
+                    <p>Always on time for every flight.</p>
+                </div>
+
+                <div class="why-box">
+                    <span>🌐</span>
+                    <h3>Multilingual Support</h3>
+                    <p>English • Korean • Vietnamese</p>
+                </div>
+
+                <div class="why-box">
+                    <span>👨‍✈️</span>
+                    <h3>Professional Drivers</h3>
+                    <p>Experienced, licensed and friendly.</p>
+                </div>
+
+                <div class="why-box">
+                    <span>🛡️</span>
+                    <h3>Safe & Reliable</h3>
+                    <p>Clean, insured and well maintained.</p>
+                </div>
+
+                <div class="why-box">
+                    <span>⚡</span>
+                    <h3>Fast Response</h3>
+                    <p>Quick replies via WhatsApp & KakaoTalk.</p>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="reviews">
+
+            <h2>OUR CUSTOMER REVIEWS</h2>
+
+            <div class="review-grid">
+
+                <div class="review-card">
+
+                    <div class="stars">★★★★★</div>
+
+                    <h3>Kim Min Soo 🇰🇷</h3>
+
+                    <p>
+                        Excellent service. Very clean vehicle and
+                        fluent Korean communication.
+                    </p>
+
+                </div>
+
+                <div class="review-card">
+
+                    <div class="stars">★★★★★</div>
+
+                    <h3>Lee Ji Eun 🇰🇷</h3>
+
+                    <p>
+                        Driver arrived early.
+                        Airport pickup was perfect.
+                        Highly recommended.
+                    </p>
+
+                </div>
+
+                <div class="review-card">
+
+                    <div class="stars">★★★★★</div>
+
+                    <h3>David Smith 🇺🇸</h3>
+
+                    <p>
+                        Comfortable trip,
+                        professional driver and
+                        excellent support.
+                    </p>
+
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h3>Park Ji Hoon <small>KR</small></h3>
+                    <p>Very friendly driver. Clean EV and smooth airport transfer. Will book again.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h3>Sarah Johnson <small>US</small></h3>
+                    <p>Professional service, comfortable vehicle and excellent communication.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h3>Tanaka Ken <small>JP</small></h3>
+                    <p>Perfect experience in Da Nang. Easy booking and punctual pickup.</p>
+                </div>
+
+            </div>
+
+        </section>
+        <section id="contact" class="contact">
+
+            <h2>CONTACT US</h2>
+
+            <p>Choose your favorite app and contact us instantly</p>
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+
+                    <img src="images/kakao-qr.png" alt="Kakao">
+
+                    <h3>KakaoTalk</h3>
+
+                    <p>Hoanganhtravel</p>
+
+                    <a href="javascript:void(0)" onclick="openQR('images/kakao-qr.png','KakaoTalk')">
+                        SCAN QR
+                    </a>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <img src="images/zalo-qr.png" alt="Zalo">
+
+                    <h3>Zalo</h3>
+
+                    <p>0789 003 699</p>
+
+                    <a href="javascript:void(0)" onclick="openQR('images/zalo-qr.png','Zalo')">
+                        SCAN QR
+                    </a>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <img src="images/line-qr.png" alt="LINE">
+
+                    <h3>LINE</h3>
+
+                    <p>ID: Hoanganhtravel</p>
+
+                    <a href="javascript:void(0)" onclick="openQR('images/line-qr.png','LINE')">
+                        SCAN QR
+                    </a>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <img src="images/whatsapp-qr.png" alt="WhatsApp">
+
+                    <h3>WhatsApp</h3>
+
+                    <p>+84 789 003 699</p>
+
+                    <a href="javascript:void(0)" onclick="openQR('images/whatsapp-qr.png','WhatsApp')">
+                        SCAN QR
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section id="pricing" class="pricing">
+
+            <h2>PRICE LIST</h2>
+
+            <p>Airport Transfer & Private Tour</p>
+
+            <div class="price-table">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Route</th>
+                            <th>Trip</th>
+                            <th>4 Seats</th>
+                            <th>7 Seats</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Airport ↔ Da Nang Hotel</td>
+                            <td>One Way</td>
+                            <td>120</td>
+                            <td>150</td>
+                        </tr>
+
+                        <tr>
+                            <td>Airport ↔ Hoi An Hotel</td>
+                            <td>One Way</td>
+                            <td>250</td>
+                            <td>300</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ Linh Ung Pagoda</td>
+                            <td>Round Trip</td>
+                            <td>350</td>
+                            <td>450</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ Ba Na Hills</td>
+                            <td>Round Trip</td>
+                            <td>600</td>
+                            <td>650</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ Hoi An</td>
+                            <td>Round Trip</td>
+                            <td>500</td>
+                            <td>600</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ Nui Than Tai</td>
+                            <td>Round Trip</td>
+                            <td>650</td>
+                            <td>750</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ VinWonders Nam Hoi An</td>
+                            <td>Round Trip</td>
+                            <td>750</td>
+                            <td>850</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ VinWonders ↔ Hoi An</td>
+                            <td>Round Trip</td>
+                            <td>850</td>
+                            <td>950</td>
+                        </tr>
+
+                        <tr>
+                            <td>Hoi An ↔ VinWonders</td>
+                            <td>Round Trip</td>
+                            <td>450</td>
+                            <td>550</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ Bay Mau Coconut Forest</td>
+                            <td>Round Trip</td>
+                            <td>600</td>
+                            <td>750</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ Mikazuki Resort</td>
+                            <td>Round Trip</td>
+                            <td>450</td>
+                            <td>550</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ Cham Island Pier</td>
+                            <td>Round Trip</td>
+                            <td>550</td>
+                            <td>650</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ Hoa Phu Thanh</td>
+                            <td>Round Trip</td>
+                            <td>700</td>
+                            <td>750</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ My Son Sanctuary</td>
+                            <td>Round Trip</td>
+                            <td>850</td>
+                            <td>950</td>
+                        </tr>
+
+                        <tr>
+                            <td>Hoi An ↔ My Son Sanctuary</td>
+                            <td>Round Trip</td>
+                            <td>650</td>
+                            <td>750</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ My Son ↔ Hoi An ↔ Da Nang</td>
+                            <td>Round Trip</td>
+                            <td>1050</td>
+                            <td>1250</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ Hue ↔ Da Nang</td>
+                            <td>Round Trip</td>
+                            <td>1600</td>
+                            <td>1800</td>
+                        </tr>
+
+                        <tr>
+                            <td>Da Nang ↔ Hoi An (8 Hours / 100km)</td>
+                            <td>Charter</td>
+                            <td>1600</td>
+                            <td>1800</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+        <footer>
+
+            <div class="footer-container">
+
+                <div class="footer-about">
+
+                    <h2>HOÀNG ANH EV TRAVEL</h2>
+
+                    <p>
+                        Premium Electric Vehicle Rental Service
+                        in Da Nang.
+                    </p>
+
+
+                </div>
+
+                <div class="footer-contact">
+
+                    <h3>Contact</h3>
+
+                    <p>📞 +84 967 003 699</p>
+
+                    <p>💬 Kakao : Hoanganhtravel</p>
+
+                    <p>💚 LINE : Hoanganhtravel</p>
+
+                    <p>📍 Da Nang, Vietnam</p>
+
+                </div>
+
+                <div class="footer-service">
+
+                    <h3>Services</h3>
+
+                    <p>Airport Pickup</p>
+
+                    <p>Private Charter</p>
+
+                    <p>City Tour</p>
+
+                    <p>Business Travel</p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="copyright">
+
+                © 2026 HOANG ANH EV TRAVEL.
+                All Rights Reserved.
+
             </p>
 
-        </div>
 
-        <div class="review-card">
 
-            <div class="stars">★★★★★</div>
+        </footer>
 
-            <h3>David Smith 🇺🇸</h3>
+        <div class="floating-menu">
 
-            <p>
-                Comfortable trip,
-                professional driver and
-                excellent support.
-            </p>
+            <a href="#home" class="top-btn">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
 
         </div>
-        <div class="review-card">
-    <div class="stars">★★★★★</div>
-    <h3>Park Ji Hoon <small>KR</small></h3>
-    <p>Very friendly driver. Clean EV and smooth airport transfer. Will book again.</p>
-</div>
 
-<div class="review-card">
-    <div class="stars">★★★★★</div>
-    <h3>Sarah Johnson <small>US</small></h3>
-    <p>Professional service, comfortable vehicle and excellent communication.</p>
-</div>
+        <div id="qrModal" class="qr-modal">
 
-<div class="review-card">
-    <div class="stars">★★★★★</div>
-    <h3>Tanaka Ken <small>JP</small></h3>
-    <p>Perfect experience in Da Nang. Easy booking and punctual pickup.</p>
-</div>
+            <div class="qr-content">
 
-    </div>
+                <span class="close-btn" onclick="closeQR()">&times;</span>
 
-</section>
-<section id="contact" class="contact">
+                <h2 id="qrTitle"></h2>
 
-    <h2>CONTACT US</h2>
+                <img id="qrImage" src="" alt="QR Code">
 
-    <p>Choose your favorite app and contact us instantly</p>
-
-    <div class="contact-grid">
-
-    <div class="contact-card">
-
-        <img src="images/kakao-qr.png" alt="Kakao">
-
-        <h3>KakaoTalk</h3>
-
-        <p>Hoanganhtravel</p>
-
-        <a href="javascript:void(0)"
-           onclick="openQR('images/kakao-qr.png','KakaoTalk')">
-           SCAN QR
-        </a>
-
-    </div>
-
-    <div class="contact-card">
-
-        <img src="images/zalo-qr.png" alt="Zalo">
-
-        <h3>Zalo</h3>
-
-        <p>0789 003 699</p>
-
-        <a href="javascript:void(0)"
-           onclick="openQR('images/zalo-qr.png','Zalo')">
-           SCAN QR
-        </a>
-
-    </div>
-
-    <div class="contact-card">
-
-        <img src="images/line-qr.png" alt="LINE">
-
-        <h3>LINE</h3>
-
-        <p>ID: Hoanganhtravel</p>
-
-        <a href="javascript:void(0)"
-           onclick="openQR('images/line-qr.png','LINE')">
-           SCAN QR
-        </a>
-
-    </div>
-
-    <div class="contact-card">
-
-        <img src="images/whatsapp-qr.png" alt="WhatsApp">
-
-        <h3>WhatsApp</h3>
-
-        <p>+84 789 003 699</p>
-
-        <a href="javascript:void(0)"
-           onclick="openQR('images/whatsapp-qr.png','WhatsApp')">
-           SCAN QR
-        </a>
-
-    </div>
-
-</div>
-
-</section>
-<section id="pricing" class="pricing">
-
-    <h2>PRICE LIST</h2>
-
-    <p>Airport Transfer & Private Tour</p>
-
-    <div class="price-table">
-
-        <table>
-
-            <thead>
-                <tr>
-                    <th>Route</th>
-                    <th>Trip</th>
-                    <th>4 Seats</th>
-                    <th>7 Seats</th>
-                </tr>
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td>Airport ↔ Da Nang Hotel</td>
-                    <td>One Way</td>
-                    <td>120</td>
-                    <td>150</td>
-                </tr>
-
-                <tr>
-                    <td>Airport ↔ Hoi An Hotel</td>
-                    <td>One Way</td>
-                    <td>250</td>
-                    <td>300</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ Linh Ung Pagoda</td>
-                    <td>Round Trip</td>
-                    <td>350</td>
-                    <td>450</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ Ba Na Hills</td>
-                    <td>Round Trip</td>
-                    <td>600</td>
-                    <td>650</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ Hoi An</td>
-                    <td>Round Trip</td>
-                    <td>500</td>
-                    <td>600</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ Nui Than Tai</td>
-                    <td>Round Trip</td>
-                    <td>650</td>
-                    <td>750</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ VinWonders Nam Hoi An</td>
-                    <td>Round Trip</td>
-                    <td>750</td>
-                    <td>850</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ VinWonders ↔ Hoi An</td>
-                    <td>Round Trip</td>
-                    <td>850</td>
-                    <td>950</td>
-                </tr>
-
-                <tr>
-                    <td>Hoi An ↔ VinWonders</td>
-                    <td>Round Trip</td>
-                    <td>450</td>
-                    <td>550</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ Bay Mau Coconut Forest</td>
-                    <td>Round Trip</td>
-                    <td>600</td>
-                    <td>750</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ Mikazuki Resort</td>
-                    <td>Round Trip</td>
-                    <td>450</td>
-                    <td>550</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ Cham Island Pier</td>
-                    <td>Round Trip</td>
-                    <td>550</td>
-                    <td>650</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ Hoa Phu Thanh</td>
-                    <td>Round Trip</td>
-                    <td>700</td>
-                    <td>750</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ My Son Sanctuary</td>
-                    <td>Round Trip</td>
-                    <td>850</td>
-                    <td>950</td>
-                </tr>
-
-                <tr>
-                    <td>Hoi An ↔ My Son Sanctuary</td>
-                    <td>Round Trip</td>
-                    <td>650</td>
-                    <td>750</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ My Son ↔ Hoi An ↔ Da Nang</td>
-                    <td>Round Trip</td>
-                    <td>1050</td>
-                    <td>1250</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ Hue ↔ Da Nang</td>
-                    <td>Round Trip</td>
-                    <td>1600</td>
-                    <td>1800</td>
-                </tr>
-
-                <tr>
-                    <td>Da Nang ↔ Hoi An (8 Hours / 100km)</td>
-                    <td>Charter</td>
-                    <td>1600</td>
-                    <td>1800</td>
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </div>
-
-</section>
-<footer>
-
-    <div class="footer-container">
-
-        <div class="footer-about">
-
-    <h2>HOÀNG ANH EV TRAVEL</h2>
-
-    <p>
-        Premium Electric Vehicle Rental Service
-        in Da Nang.
-    </p>
-
+            </div>
 
         </div>
 
-        <div class="footer-contact">
-
-            <h3>Contact</h3>
-
-            <p>📞 +84 967 003 699</p>
-
-            <p>💬 Kakao : Hoanganhtravel</p>
-
-            <p>💚 LINE : Hoanganhtravel</p>
-
-            <p>📍 Da Nang, Vietnam</p>
-
-        </div>
-
-        <div class="footer-service">
-
-            <h3>Services</h3>
-
-            <p>Airport Pickup</p>
-
-            <p>Private Charter</p>
-
-            <p>City Tour</p>
-
-            <p>Business Travel</p>
-
-        </div>
-
-    </div>
-
-    <hr>
-
-    <p class="copyright">
-
-        © 2026 HOANG ANH EV TRAVEL.
-        All Rights Reserved.
-
-    </p>
- 
-
-
-</footer>
-
-<div class="floating-menu">
-
-    <a href="#home" class="top-btn">
-        <i class="fa-solid fa-arrow-up"></i>
-    </a>
-
-</div>
-
-<div id="qrModal" class="qr-modal">
-
-    <div class="qr-content">
-
-        <span class="close-btn" onclick="closeQR()">&times;</span>
-
-        <h2 id="qrTitle"></h2>
-
-        <img id="qrImage" src="" alt="QR Code">
-
-    </div>
-
-</div>
-
-<script src="script.js"></script>
+        <script src="script.js"></script>
 
 </body>
+
 </html>

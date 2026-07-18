@@ -57,5 +57,26 @@ window.addEventListener("click", function (e) {
         document.getElementById("languageMenu").style.display = "none";
 
     }
+});
+function toggleMenu(){
+
+    document
+        .getElementById("mobileMenu")
+        .classList.toggle("active");
+
+    }
+// Đóng menu khi bấm ra ngoài
+document.addEventListener("click", function(e){
+
+    const menu = document.getElementById("mobileMenu");
+    const button = document.querySelector(".menu-toggle");
+
+    if(
+        menu.classList.contains("active") &&
+        !menu.contains(e.target) &&
+        !button.contains(e.target)
+    ){
+        menu.classList.remove("active");
+    }
 
 });
