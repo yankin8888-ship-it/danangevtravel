@@ -7,13 +7,18 @@ const translations = {
         heroSubtitle: "Airport Transfers • Private Tours • Professional Drivers",
 
         heroDescription: "Premium VinFast electric vehicles with reliable airport transfers, private tours and professional drivers. Travel comfortably across Da Nang, Hoi An and Central Vietnam.",
+        service1: "Airport Transfer",
+service2: "Private Tour",
+service3: "Professional Driver",
 
         book: "BOOK NOW",
 
         navHome: "Home",
-        navCars: "Cars",
-        navPrice: "Price",
-        navContact: "Contact",
+navAirport: "Airport Transfer",
+navCars: "Cars",
+navPrice: "Price",
+navContact: "Contact",
+reviewMenu: "Reviews",
         language: "Language",
 
         priceTitle: "PRICE LIST",
@@ -82,13 +87,17 @@ contactLineId:"ID: Hoanganhtravel",
         heroSubtitle: "Đưa đón sân bay • Tour riêng • Tài xế chuyên nghiệp",
 
         heroDescription: "Dịch vụ thuê xe điện VinFast cao cấp với tài xế chuyên nghiệp, đưa đón sân bay và tour riêng khắp Đà Nẵng, Hội An và miền Trung.",
-
+        service1: "Đưa đón sân bay",
+service2: "Tour riêng",
+service3: "Tài xế chuyên nghiệp",
         book: "ĐẶT XE",
 
         navHome: "Trang chủ",
-        navCars: "Xe",
-        navPrice: "Bảng giá",
-        navContact: "Liên hệ",
+navAirport: "Đưa đón sân bay",
+navCars: "Xe",
+navPrice: "Bảng giá",
+navContact: "Liên hệ",
+reviewMenu: "Đánh giá",
         language: "Ngôn ngữ",
 
         priceTitle: "BẢNG GIÁ",
@@ -157,14 +166,18 @@ contactLineId:"ID: Hoanganhtravel",
         heroSubtitle: "공항 픽업 • 단독 투어 • 전문 기사",
 
         heroDescription: "프리미엄 빈패스트 전기차와 전문 기사 서비스를 제공합니다. 다낭, 호이안 및 중부 베트남 여행을 더욱 편안하게 즐기세요.",
-
+        service1: "공항 픽업",
+service2: "단독 투어",
+service3: "전문 기사",
         book: "예약하기",
 
         navHome: "홈",
-        navCars: "차량",
-        navPrice: "요금",
-        navContact: "문의",
-        language: "언어",
+navAirport: "공항 픽업",
+navCars: "차량",
+navPrice: "요금",
+navContact: "문의",
+reviewMenu: "후기",
+language: "언어",
 
         priceTitle: "요금표",
         priceSubtitle: "공항 픽업 & 단독 투어",

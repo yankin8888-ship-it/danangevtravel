@@ -180,7 +180,7 @@ nav a:hover{
 
     background-size:cover;
 
-    background-position:85% center;
+    background-position:63% center;
 
     background-repeat:no-repeat;
 
@@ -203,15 +203,14 @@ nav a:hover{
 
     inset:0;
 
-    background:
-    linear-gradient(
-        115deg,
-        transparent 0%,
-        rgba(255,255,255,.05) 45%,
-        transparent 70%
+    background:linear-gradient(
+        90deg,
+        rgba(0,0,0,.72) 0%,
+        rgba(0,0,0,.42) 38%,
+        rgba(0,0,0,.18) 70%,
+        transparent 100%
     );
 
-    pointer-events:none;
 }
 
 .hero-content{
@@ -228,6 +227,7 @@ nav a:hover{
 
     max-width:650px;
     transform:translateY(-30px);
+    
 }
 .hero h1{
 
@@ -1329,57 +1329,153 @@ nav a{
     line-height:1.5;
     margin-bottom:20px;
 }
-    /* Hero Mobile */
+    
+  /* ==========================
+   HERO MOBILE PREMIUM
+========================== */
 
 .hero{
+
     min-height:100vh;
-    height:auto;
-    padding:90px 20px 50px;
+
     display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-bottom:20px;
+    align-items:flex-start;
+    justify-content:flex-start;
+
+    padding:60px 26px 40px;
+
+    background-position:70% center;
+    background-size:cover;
+
 }
 
 .hero-content{
-    width:100%;
-    max-width:360px;
-    margin:0 auto;
-    text-align:center;
+
+    width:270px;
+
+    max-width:270px;
+
+    padding-top:118px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
 }
 
 .hero h1{
-    font-family:"Poppins",sans-serif;
-    font-size:28px;
-    font-weight:700;
-    line-height:1.15;
-    letter-spacing:-1px;
-    color:#fff;
-    text-shadow:0 3px 18px rgba(0,0,0,.35);
+
+    font-size:46px;
+
+    line-height:0.98;
+
+    font-weight:900;
+
+    letter-spacing:-2px;
+
+    margin-bottom:36px;
 
 }
-
 .hero-subtitle{
-    font-size:18px;
-    line-height:1.4;
+
+    font-size:13px;
+
+    color:#D4AF37;
+
+    font-weight:600;
+
     margin-bottom:18px;
+
 }
 
-.hero-description{
-    font-size:16px;
+..hero-description{
+
+    width:270px;
+
+    font-size:18px;
+
+    line-height:1.75;
+
+    color:#EAEAEA;
+
+    margin-bottom:42px;
+
+}
+.hero-service{
+
+    display:flex;
+
+    gap:0;
+
+    width:100%;
+
+    justify-content:space-between;
+
+    margin-bottom:38px;
+
+}
+.service-item{
+
+    width:72px;
+
+    display:flex;
+    flex:1;
+
+    flex-direction:column;
+
+     width:33%;
+
+    align-items:flex-start;
+
+}
+.service-icon{
+
+    font-size:26px;
+
+    margin-bottom:10px;
+
+    color:#D4AF37;
+
+}
+.service-item span:last-child{
+
+    font-size:13px;
+
+    line-height:1.5;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+.hero-tag{
+
+    font-size:12px;
+
+    letter-spacing:1.5px;
+
     line-height:1.6;
-    max-width:340px;
-    margin:0 auto 24px;
-}
 
-.hero p{
-    font-size:16px;
+    color:#D4AF37;
+
+    margin-bottom:26px;
+
 }
 
 .btn-primary{
-    padding:14px 28px;
-    font-size:15px;
+
+    width:220px;
+
+    height:62px;
+
     border-radius:12px;
+
+    font-size:22px;
+
+    font-weight:800;
+
 }
 
    /* Fleet */

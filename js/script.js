@@ -83,29 +83,60 @@ document.addEventListener("click", function(e){
 
 function changeLanguage(lang){
 
+    console.log("hero-title", document.getElementById("hero-title"));
+    console.log("service1", document.getElementById("service1"));
+    console.log("service2", document.getElementById("service2"));
+    console.log("service3", document.getElementById("service3"));
+    console.log("hero-description", document.getElementById("hero-description"));
+
     document.getElementById("hero-title").innerHTML =
         translations[lang].heroTitle;
 
-    document.getElementById("hero-subtitle").innerHTML =
-        translations[lang].heroSubtitle;
+    document.getElementById("service1").innerHTML =
+        translations[lang].service1;
+
+    document.getElementById("service2").innerHTML =
+        translations[lang].service2;
+
+    document.getElementById("service3").innerHTML =
+        translations[lang].service3;
 
     document.getElementById("hero-description").innerHTML =
         translations[lang].heroDescription;
 
-    document.getElementById("book-btn").innerHTML =
-        translations[lang].book;
+    const navHome = document.getElementById("nav-home");
+console.log(navHome);
+        console.log(document.getElementById("nav-home"));
+console.log(document.getElementById("nav-cars"));
+console.log(document.getElementById("nav-price"));
+console.log(document.getElementById("nav-contact"));
 
-    document.getElementById("nav-home").innerHTML =
-        translations[lang].navHome;
+    
 
-    document.getElementById("nav-cars").innerHTML =
-        translations[lang].navCars;
+if (navHome) {
+    navHome.innerHTML = translations[lang].navHome;
+}
+        const navAirport = document.getElementById("nav-airport");
+console.log("nav-airport =", navAirport);
 
-    document.getElementById("nav-price").innerHTML =
-        translations[lang].navPrice;
+if (navAirport) {
+    navAirport.innerHTML = translations[lang].navAirport;
+}
 
-    document.getElementById("nav-contact").innerHTML =
-        translations[lang].navContact;
+const navCars = document.getElementById("nav-cars");
+if (navCars) {
+    navCars.innerHTML = translations[lang].navCars;
+}
+
+const navPrice = document.getElementById("nav-price");
+if (navPrice) {
+    navPrice.innerHTML = translations[lang].navPrice;
+}
+
+const navContact = document.getElementById("nav-contact");
+if (navContact) {
+    navContact.innerHTML = translations[lang].navContact;
+}
 
     document.getElementById("language-text").innerHTML =
         translations[lang].language;
@@ -188,4 +219,32 @@ document.getElementById("contact-line-id").innerHTML =
 document.querySelectorAll(".contact-btn").forEach(btn => {
     btn.innerHTML = translations[lang].scanQR;
     });
+     // ===== Mobile Menu =====
+
+    const mNavHome = document.getElementById("m-nav-home-text");
+    if (mNavHome) {
+        mNavHome.innerHTML = translations[lang].navHome;
+    }
+
+    const mNavCars = document.getElementById("m-nav-cars-text");
+    if (mNavCars) {
+        mNavCars.innerHTML = translations[lang].navCars;
+    }
+
+    const mNavPrice = document.getElementById("m-nav-price-text");
+    if (mNavPrice) {
+        mNavPrice.innerHTML = translations[lang].navPrice;
+    }
+
+    const mNavReview = document.getElementById("m-nav-review-text");
+    if (mNavReview) {
+        mNavReview.innerHTML = translations[lang].reviewMenu;
+    }
+
+    const mNavContact = document.getElementById("m-nav-contact-text");
+    if (mNavContact) {
+        mNavContact.innerHTML = translations[lang].navContact;
+    }
+
 }
+

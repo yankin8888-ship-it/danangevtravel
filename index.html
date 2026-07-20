@@ -118,15 +118,17 @@ height="60">
         </a>
 
         <nav>
-    <a href="#home">Home</a>
+    <a id="nav-home" href="#home">Home</a>
 
-    <a href="airport-transfer.html">Airport Transfer</a>
+    <a id="nav-airport" href="airport-transfer.html">
+        Airport Transfer
+    </a>
 
-    <a href="#fleet">Cars</a>
+    <a id="nav-cars" href="#fleet">Cars</a>
 
-    <a href="#pricing">Price</a>
+    <a id="nav-price" href="#pricing">Price</a>
 
-    <a href="#contact">Contact</a>
+    <a id="nav-contact" href="#contact">Contact</a>
 </nav>
 
         <div class="language-dropdown">
@@ -151,48 +153,96 @@ height="60">
 
     </header>
 
-    <div class="mobile-menu" id="mobileMenu">
+   <div class="mobile-menu" id="mobileMenu">
 
-        <a href="#home" onclick="toggleMenu()"><i class="fa-solid fa-house"></i> Home</a>
+    <a id="m-nav-home" href="#home" onclick="toggleMenu()">
+        <i class="fa-solid fa-house"></i>
+        <span id="m-nav-home-text">Home</span>
+    </a>
 
-        <a href="#fleet" onclick="toggleMenu()"><i class="fa-solid fa-car-side"></i> Cars</a>
+    <a id="m-nav-cars" href="#fleet" onclick="toggleMenu()">
+        <i class="fa-solid fa-car-side"></i>
+        <span id="m-nav-cars-text">Cars</span>
+    </a>
 
-        <a href="#pricing" onclick="toggleMenu()"><i class="fa-solid fa-wallet"></i> Price</a>
+    <a id="m-nav-price" href="#pricing" onclick="toggleMenu()">
+        <i class="fa-solid fa-wallet"></i>
+        <span id="m-nav-price-text">Price</span>
+    </a>
 
-        <a href="#reviews" onclick="toggleMenu()"><i class="fa-solid fa-star"></i> Reviews</a>
+    <a id="m-nav-review" href="#reviews" onclick="toggleMenu()">
+        <i class="fa-solid fa-star"></i>
+        <span id="m-nav-review-text">Reviews</span>
+    </a>
 
-        <a href="#contact" onclick="toggleMenu()"><i class="fa-solid fa-headset"></i> Contact</a>
+    <a id="m-nav-contact" href="#contact" onclick="toggleMenu()">
+        <i class="fa-solid fa-headset"></i>
+        <span id="m-nav-contact-text">Contact</span>
+    </a>
+
+</div>
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+   <div class="hero-content">
+
+    <span class="hero-tag">
+
+PREMIUM CAR RENTAL
+<br>
+IN DA NANG
+
+</span>
+
+    <h1 id="hero-title">
+        Premium Car Rental
+        <br>
+        in Da Nang
+    </h1>
+
+    <div class="hero-service">
+
+        <div class="service-item">
+    <i class="fa-solid fa-plane-departure service-icon"></i>
+    <span id="service1">Airport Transfer</span>
+</div>
+
+<div class="service-item">
+    <i class="fa-solid fa-location-dot service-icon"></i>
+    <span id="service2">Private Tour</span>
+</div>
+
+<div class="service-item">
+    <i class="fa-solid fa-user-tie service-icon"></i>
+    <span id="service3">Professional Driver</span>
+</div>
 
     </div>
 
-    
-        <section id="home" class="hero">
+    <p
+        id="hero-description"
+        class="hero-description">
 
-            <div class="hero-content">
+        Premium VinFast electric vehicles with
+        professional driver service.
 
-                <h1 id="hero-title">
-                    Premium Car Rental<br>
-                    in Da Nang
-                </h1>
+    </p>
 
-                <p id="hero-subtitle" class="hero-subtitle">
-                    Airport Transfers • Private Tours • Professional Drivers
-                </p>
+    <a
+        href="#contact"
+        class="btn-primary"
+        id="book-btn">
 
-                <p id="hero-description" class="hero-description">
-                    Premium VinFast electric vehicles with reliable airport transfers,
-                    private tours, and professional drivers.<br>
-                    Travel comfortably across Da Nang, Hoi An and Central Vietnam.
-                </p>
+        BOOK NOW
 
-                <a href="#contact" class="btn-primary" id="book-btn">
-                    BOOK NOW
-                </a>
+    </a>
 
-            </div>
+</div>
 
+</section>
 
-        </section>
+        
        <section id="fleet" class="fleet">
 
     <h2 id="fleet-title">
